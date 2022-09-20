@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+}
+
+body {
+  font-family: 'Inter', sans-serif;;
+  font-size: 1.6rem;
+
+  background-image: url(./images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: top center;
+  background-color: #121214;
+}
+
+header div {
+  width: 12rem;
+  margin: 3.2rem auto;
+  padding: .4rem;
+
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+  border-radius: 50%;
+
+  transition: transform .3s; 
+
+  animation: fromTop .3s .3s backwards;
+
+}
+
+header div:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 19px 3px rgba(206,196,252,0.26);
+}
+
+header div a img {
+  width: 100%;
+
+  border-radius: 50%;
+
+  display: flex;
+
+}
+
+main {
+  max-width: 58rem;
+  width: 90%;
+
+  display: grid;
+  margin: auto;
+  gap: 2.4rem;
+
+  margin-bottom: 3.2rem;
+
+}
+
+section {
+  background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+
+  padding-top: .4rem;
+
+  border-radius: 1rem;
+}
+
+section:nth-child(1) {
+  animation: fromTop .3s .4s backwards;
+}
+
+section:nth-child(2) {
+  animation: fromTop .3s .6s backwards;
+}
+
+section:nth-child(3) {
+  animation: fromTop .3s .9s backwards;
+}
+
+section div {
+  background-color: #2A2634;
+
+  color: white;
+  
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+
+  border-radius: .8rem;
+}
+
+section div h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 3.8rem;
+}
+
+section div p {
+  font-weight: 400;
+  line-height: 2.5rem;
+
+  color: #A1A1AA;
+}
+
+ul {
+  display: flex;
+  gap: 1.6rem;
+  padding-top: 2.4rem;
+  
+  list-style: none;
+
+  flex-wrap: wrap;
+}
+
+/* GAME LIST */
+
+.games-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+}
+
+.games-list li a img {
+  border-radius: .8rem;
+
+  width: 9rem;
+  height: 12rem;
+
+  transition: transform .4s;
+}
+
+
+.games-list li:hover a img {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 19px 3px rgba(176,239,252,0.26);
+}
+
+/* CHANNEL LIST */
+
+.channel-list li a img {
+  width: 7rem;
+
+  border-radius: 50%;
+  border: 1px solid #443E54;
+
+  transition: transform .5s;
+}
+
+.channel-list li:hover a img {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 19px 3px rgba(176,239,252,0.26);
+}
+
+/* SOCIAL LIST */
+
+.social-list li a svg {
+  transition: transform .4s;
+}
+
+.social-list li:hover a svg {
+  transform: scale(1.2);
+
+}
+
+/* ANIMATIONS */
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-35px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
